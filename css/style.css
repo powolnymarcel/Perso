@@ -52,6 +52,34 @@ body {
 	font-style: normal;
 	color: #3b404d !important
 }
+
+.contacts {
+	display: block;
+	margin-right: 2.35765%;
+	position: relative;
+	text-align: center;
+}
+ul.social {
+	width: 38%;
+}
+ul.social li {
+	display: inline;
+	font-size: 4em;
+	list-style: outside none none;
+	padding: 0 1%;
+}
+ul.social li a:hover {
+	text-decoration: none;
+}
+
+
+ul.social li a i {
+	color: rgb(59,64,77);
+}
+
+.col-lg-3.col-md-4.col-xs-6.thumb {
+	min-height: 100px;
+}
 nav {
 	position: fixed;
 	width: 100%;
@@ -120,17 +148,22 @@ nav .nav-close {
 	border: 1px dashed;
 }
 @media (max-width: 991px) {
-	/* === START HEADER === */
 	.header {
 		padding: 20px 20px 20px 15px;
-		/*background: rgba(0, 0, 0, 0.5);*/
 	}
 	.header .nav-toggle {
 		margin: 3px 0 0 0;
 	}
 	.header .brand {
 		display: none;
-	}}
+	}
+	ul.social {
+		width: 100%;
+	}
+	.col-lg-3.col-md-4.col-xs-6.thumb {
+		min-height: 145px;
+	}
+}
 @media (max-width: 768px) {
 
 nav ul {

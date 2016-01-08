@@ -1,58 +1,3 @@
-<?php
-	if (isset($_POST["submit"])) {
-		$nom = $_POST['nom'];
-		$email = $_POST['email'];
-		$message = $_POST['message'];
-		$humain = intval($_POST['humain']);
-		$from = 'Formulaire ondego.be';
-		$to = 'powolnymarcel@gmail.com';
-		$subject = 'Message du formulaire ondego.be ';
-
-		$body ="From: $nom\n E-Mail: $email\n Message:\n $message";
-		// Si nom entré
-		if (!$_POST['nom']) {
-			$errNom = 'Veuillez entrer votre nom';
-		}
-
-		// Verifier si le mail est entré et valide
-		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-			$errEmail = 'Veuillez entrer une adresse e-mail valide';
-		}
-
-		//Vérifier si message présent
-		if (!$_POST['message']) {
-			$errMessage = 'Veuillez écrire un message';
-		}
-		//Anti robot simple
-		if ($humain !== 5) {
-			$errHumain = 'Réponse incorrecte';
-		}
-// Si pas d'erreurs, envoi du mail
-if (!$errNom && !$errEmail && !$errMessage && !$errHumain) {
-	if (mail ($to, $subject, $body, $from)) {
-		$result='<div class="alert alert-success">Merci, je vous contacte au plus vite</div>';
-} else {
-$result='<div class="alert alert-danger">Désolé, une erreur est survennue, veuillez ré-essayer plus tard.</div>';
-}
-}
-}
-?>
-
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-	    <title>Powolny Marcel</title>
-	    <meta name="description" content="Je suis Powolny Marcel, web developpeur à Liège." />
-	    <meta name="author" content="Powolny Marcel" />
-
-	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-
-	    <link rel="stylesheet" href="css/font-awesome.css" />
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/icomoon.css" />
-		<link rel="stylesheet" href="css/style.css" />
-	</head>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -171,55 +116,55 @@ $result='<div class="alert alert-danger">Désolé, une erreur est survennue, veu
             </div>
             <div class="col-md-8">
 
-<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+
                 <a class="thumbnail" href="http://sailsjs.org/" target="_blank">
                     <img class="img-responsive" src="http://appuser.herokuapp.com/images/1.png" alt="">
-                </a></div>
-<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                </a>
+
                 <a class="thumbnail"  href="https://angularjs.org/" target="_blank">
                     <img class="img-responsive" src="http://appuser.herokuapp.com/images/AngularJS-large.png" alt="">
-                </a></div>
-<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                </a>
+
                 <a class="thumbnail" target="_blank" href="https://nodejs.org/en/">
                     <img class="img-responsive" src="http://appuser.herokuapp.com/images/node.png" alt="">
-                </a></div>
-<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                </a>
+
                 <a class="thumbnail" target="_blank" href="https://www.mongodb.org/">
                     <img class="img-responsive" src="http://appuser.herokuapp.com/images/mongo-db-logo.png" alt="">
-                </a></div>
-<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                </a>
+
                 <a class="thumbnail" target="_blank" href="http://getbootstrap.com/">
                     <img class="img-responsive" src="http://appuser.herokuapp.com/images/twitter-bootstrap.png" alt="">
-                </a></div>
-<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                </a>
+
                 <a class="thumbnail" target="_blank" href="http://bower.io/">
-                    <img class="img-responsive" src="http://appuser.herokuapp.com/images/logo-javascript.png" alt="">
-                </a></div>
-<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <img class="img-responsive" src="http://appuser.herokuapp.com/images/bower_logo.png" alt="">
+                </a>
+
                 <a class="thumbnail" target="_blank" href="https://www.npmjs.com/">
                     <img class="img-responsive" src="http://appuser.herokuapp.com/images/logo-npm-300x90-light.png" alt="">
-                </a></div>
-<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                </a>
+
                 <a class="thumbnail" target="_blank" href="https://www.heroku.com/">
                     <img class="img-responsive" src="http://appuser.herokuapp.com/images/Heroku_logo.png" alt="">
-                </a></div>
-<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                </a>
+
                 <a class="thumbnail" target="_blank" href="https://mongolab.com/">
                     <img class="img-responsive" src="http://appuser.herokuapp.com/images/MongoLab-Logo-OnWhite-RGB.png" alt="">
-                </a></div>
-<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                </a>
+
                 <a class="thumbnail" target="_blank" href="https://github.com/powolnymarcel">
                     <img class="img-responsive" src="http://appuser.herokuapp.com/images/githuboctocat.jpeg" alt="">
-                </a></div>
-<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                </a>
+
                 <a class="thumbnail" target="_blank" href="http://gruntjs.com/">
                     <img class="img-responsive" src="http://appuser.herokuapp.com/images/grunt-logo.png" alt="">
-                </a></div>
 
-<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                </a>
+
                 <a class="thumbnail" target="_blank" href="http://javascript.crockford.com/">
-                    <img class="img-responsive" src="http://appuser.herokuapp.com/images/bower_logo.png" alt="">
-                </a></div>
+                    <img class="img-responsive" src="http://appuser.herokuapp.com/images/logo-javascript.png" alt="">
+                </a>
 
             </div>
         </div>
@@ -243,5 +188,4 @@ $result='<div class="alert alert-danger">Désolé, une erreur est survennue, veu
         });
     </script>
 </body>
-</html>
 </html>
