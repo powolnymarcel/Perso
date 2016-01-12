@@ -140,14 +140,14 @@ width: 50%;
     color: #3b404d !important;
 }
 .form-control.name.input-your-name {
-    border-bottom: 1px solid grey;
-    border-right: 1px solid grey;
+    border-bottom: 1px solid  #eaeaea;
+    border-right: 1px solid  #eaeaea;
 }.form-control.email.input-email {
-     border-bottom: 1px solid grey;
+     border-bottom: 1px solid  #eaeaea;
  }textarea {
-      border-bottom: 1px solid grey !important;
+      border-bottom: 1px solid  #eaeaea !important;
   }input#humain {
-       border-bottom: 1px solid grey;
+       border-bottom: 1px solid  #eaeaea;
    }
 
 .contact-form {
@@ -283,7 +283,16 @@ nav .nav-close {
 	color: #fff;
 }
 
-
+.remonter {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    bottom: 1em;
+    color: #fff;
+    font-size: 13px;
+    padding: 1em;
+    position: fixed;
+    right: 1em;
+    text-decoration: none;
+}
 .contact input, textarea {
 	color: rgb(59, 64, 77);
 }

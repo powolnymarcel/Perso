@@ -75,16 +75,16 @@ if (isset($_POST["submit"])) {
 <div class="container">
     <div class="row">
         <div class="col-md-6 col-xs-12">
-            <section class="mon-nom">
+            <section class="mon-nom" id="mon-nom">
                 <h1>Powolny <i>Marcel</i></h1>
                 <h2>Developpeur Web</h2>
-                <p>Mon nom est Powolny Marcel. Je suis un Web developpeur à Liège, Belgique.
+                <p>Mon nom est <strong>Powolny Marcel</strong>. Je suis un Web developpeur à Liège, Belgique.
                     Titulaire d'un Brevet d'Enseignement Supérieur (BAC+2) reconnu au niveau européen,</p>
-                <p>je crée des sites web avec des outils tels que Symfony, Laravel ou encore M.E.A.N.</p>
+                <p>J'ai des compétences en HTML5, CSS3, Javascript ainsi qu'en PHP, je crée des sites web avec des outils tels que Symfony, Laravel ou encore M.E.A.N.</p>
+                <p>En design je sais utiliser des outils tels que Adobe Photoshop, illustrator et Fireworks</p>
                 <p>J'aime tout ce qui concerne les nouvelles technologies et je suis passionné par le developpement Web.</p>
                 <p>Si vous avez un projet ou un job pour moi, contactez-moi.</p>
                 <br>
-
             </section>
         </div>
         <div class="col-md-6 col-xs-12">
@@ -210,7 +210,7 @@ if (isset($_POST["submit"])) {
 
         </div>
 </section>
-
+<a data-1000="opacity: 1;" data-0="opacity: 0;" class="hidden-sm remonter" href="#mon-nom"><span class="glyphicon glyphicon-chevron-up"></span></a>
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="plugin/owl-carousel/owl.carousel.min.js"></script>
 <script>
@@ -238,13 +238,22 @@ if (isset($_POST["submit"])) {
 
     //Changer couleur menu si la section techno est depassée au scroll
     $(document).scroll(function() {
-        if($(document).scrollTop() > $("#techno").position().top) {
+        if($(document).scrollTop() > $("#techno").position().top -100) {
             $('header>i').css('color', 'black');
 
         } else {
             $('header>i').css('color', 'white');
     }
     });
+
+$('a.remonter')
+  .bind('click', function(event) {
+    $('body').animate({
+        scrollTop: $("#mon-nom").offset().top
+    }, 2000);
+
+  });
+
 </script>
 
 
