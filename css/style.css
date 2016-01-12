@@ -16,9 +16,8 @@ body {
 .header {
 	position: fixed;
 	padding: 45px 75px 0 65px;
-	width: 100%;
 	top: 0;
-	left: 0;
+	right: 0;
 	z-index: 99;
 }
 .header .nav-toggle {
@@ -41,8 +40,7 @@ body {
 	border-color: #fff;
 }
 .container {
-	 height: 100vh;
-	padding-top: 125px;
+	padding-top: 25px;
 }
 
 .mon-nom>h1{
@@ -59,9 +57,7 @@ body {
 	position: relative;
 	text-align: center;
 }
-ul.social {
-	width: 38%;
-}
+
 ul.social li {
 	display: inline;
 	font-size: 4em;
@@ -80,6 +76,157 @@ ul.social li a i {
 .col-lg-3.col-md-4.col-xs-6.thumb {
 	min-height: 100px;
 }
+
+.thumbnail {
+    display: block !important;
+    padding: 10px 10px 10px 10px !important;
+    margin: 0 !important;
+    line-height: 0 !important;
+    background-color: #fff !important;
+    border: none !important;
+    border-radius: 0 !important;
+    -webkit-transition: border .2s ease-in-out !important;
+    -o-transition: border .2s ease-in-out !important;
+    transition: border .2s ease-in-out !important;
+}
+.thumbnail img {
+width: 50%;
+}
+.owl-item {
+     margin-top: 30px;
+ }
+
+#footer {
+    background-color: #eeeff2;
+    border-top: 1px solid #e9ebed;
+    padding: 0 0 60px;
+}
+
+#footer .copy {
+    text-align: left;
+}
+#footer p{
+    color: #25272b;
+}
+.margin {
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+#footer .social {
+    text-align: right;
+    color: #25272b;
+
+}
+#footer .linkedin {
+    color: rgb(27,134,188);
+}
+#footer .facebook {
+    color: #3b5998;
+}
+#footer .twitter {
+    color: #09c;
+}
+
+#footer .google {
+    color: #dd4b38;
+}
+#footer .github {
+    color: black;
+}
+
+.titreContact{
+    text-align: center;
+    color: #3b404d !important;
+}
+.form-control.name.input-your-name {
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+}.form-control.email.input-email {
+     border-bottom: 1px solid grey;
+ }textarea {
+      border-bottom: 1px solid grey !important;
+  }input#humain {
+       border-bottom: 1px solid grey;
+   }
+
+.contact-form {
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 45px;
+    min-height: 80px;
+    overflow: hidden;
+    width: 100%;
+}.no-padding {
+     padding-left: 0;
+     padding-right: 0;
+ }.contact-form .name {
+      border-right: 1px solid #eaeaea;
+  }
+.contact-form .form-control {
+    border-width: 0;
+    min-height: 80px;
+}.form-control, .input-group-addon {
+     background-color: rgba(0, 0, 0, 0);
+     border-color: #e7e8ec;
+     border-radius: 0;
+     box-shadow: none;
+     color: #a7aaad;
+     font-size: 13px;
+     height: auto;
+     line-height: normal;
+     padding: 15px 20px;
+ }.theme-btn, .theme-btn-2, .form-submit > input[type="submit"] {
+      color: #ffffff;
+  }
+.theme-btn, .theme-btn-1, .theme-btn-2, .form-submit > input[type="submit"] {
+    border-radius: 3em;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    font-size: 10px;
+    height: 45px;
+    letter-spacing: 1px;
+    line-height: normal;
+    min-width: 170px;
+    overflow: hidden;
+    padding: 15px 10px;
+    text-transform: uppercase;
+}
+.contact-form .message {
+    border-top: 1px solid #eaeaea;
+}
+a, .btn {
+    color: #7e848e;
+    transition: all 0.4s ease-in-out 0s;
+}
+.contact-form .name {
+    border-right: 1px solid #eaeaea;
+}
+.contact-form .form-control {
+    border-width: 0;
+    min-height: 80px;
+}
+label {
+    color: #a7aaad;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 nav {
 	position: fixed;
 	width: 100%;
